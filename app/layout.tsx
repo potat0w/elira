@@ -20,7 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Elira — Modern Living Store',
+  title: 'Elora — Modern Living Store',
   description: 'Discover handpicked products made just for you. A curated space for calm, design, and everyday elegance.',
   icons: {
     icon: [

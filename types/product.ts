@@ -13,6 +13,7 @@ export interface Product {
   howToUse: string;
   skinTypes?: string[];
   slug: string;
+  benefit: string;
 }
 
 export interface CartItem {

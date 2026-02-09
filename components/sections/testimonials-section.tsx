@@ -7,24 +7,24 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    quote: "Elira transformed our living room into a sanctuary. Every piece feels intentional and brings genuine calm to our daily routine.",
-    author: "Marie Laurent",
-    role: "Interior Designer",
-    location: "Paris, France",
+    quote: "Elora's products have completely transformed my skin. As someone living in Dhaka's humid climate, finding skincare that works is challenging, but these products are perfect for our weather.",
+    author: "Farhana Rahman",
+    role: "Software Engineer",
+    location: "Dhaka, Bangladesh",
   },
   {
     id: 2,
-    quote: "The attention to detail is remarkable. You can feel the quality and the thought that goes into each product's design.",
-    author: "James Chen",
-    role: "Architect",
-    location: "Vancouver, Canada",
+    quote: "The natural ingredients in Elora products are gentle yet effective. My sensitive skin has never looked better. Finally, a skincare brand that understands tropical skin needs.",
+    author: "Tasnim Ahmed",
+    role: "Medical Student",
+    location: "Chittagong, Bangladesh",
   },
   {
     id: 3,
-    quote: "Finally, a brand that understands that less truly can be more. My home has never felt more peaceful.",
-    author: "Sofia Andersson",
-    role: "Photographer",
-    location: "Stockholm, Sweden",
+    quote: "I've tried many international brands, but Elora understands what Bangladeshi skin really needs. The products are lightweight, non-greasy, and perfect for our climate.",
+    author: "Nusrat Jahan",
+    role: "Fashion Designer",
+    location: "Sylhet, Bangladesh",
   },
 ];
 

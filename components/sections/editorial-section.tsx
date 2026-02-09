@@ -67,7 +67,7 @@ export function EditorialSection() {
           style={{ transform: `scale(${scale})` }}
         >
           <Image
-            src="/images/blog-interior.jpg"
+            src="/images/n1.jpg"
             alt="Modern home office interior"
             fill
             className="object-cover"

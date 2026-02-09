@@ -71,7 +71,7 @@ export function NewsletterSection() {
                   </svg>
                 </div>
                 <p className="text-white/70 text-sm font-body">
-                  Welcome to Elira
+                  Welcome to Elora
                 </p>
               </div>
             ) : (

@@ -3,7 +3,6 @@ import { HeroSection } from "@/components/sections/hero-section";
 import { NewArrivalsSection } from "@/components/sections/marquee-section";
 import { FeaturedProductsSection } from "@/components/sections/featured-products-section";
 import { ProductDetailSection } from "@/components/sections/scrollytelling-section";
-import { EditorialSection } from "@/components/sections/editorial-section";
 import { ProductFeaturesSection } from "@/components/sections/product-features-section";
 import { BentoSection } from "@/components/sections/bento-section";
 import { LifestyleGallerySection } from "@/components/sections/lifestyle-gallery-section";
@@ -29,10 +28,7 @@ export default function Home() {
       {/* Section 4: Product Detail showcase */}
       <ProductDetailSection />
 
-      {/* Section 5: Blog/Editorial article */}
-      <EditorialSection />
-
-      {/* Section 6: Product Features - Why Choose Elira */}
+      {/* Section 5: Product Features - Why Choose Elira */}
       <ProductFeaturesSection />
 
       {/* Section 7: Bento Grid - Collections */}

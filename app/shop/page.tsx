@@ -112,7 +112,7 @@ export default function ShopPage() {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Filters Sidebar - Desktop */}
           <div className="hidden lg:block w-64 flex-shrink-0">
-            <div className="bg-white rounded-lg p-6 sticky top-4">
+            <div className="bg-white p-6 sticky top-4">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-lg font-semibold">Filters</h2>
                 {activeFilterCount > 0 && (
@@ -206,7 +206,7 @@ export default function ShopPage() {
                     <Filter className="w-4 h-4 mr-2" />
                     Filters
                     {activeFilterCount > 0 && (
-                      <span className="ml-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-full">
+                      <span className="ml-2 bg-gray-900 text-white text-xs px-2 py-1">
                         {activeFilterCount}
                       </span>
                     )}

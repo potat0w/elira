@@ -8,7 +8,7 @@ const footerLinks = [
     title: "Navigation",
     links: [
       { name: "Explore Our Shop", href: "#shop" },
-      { name: "Why Choose Elira", href: "#features" },
+      { name: "Why Choose Elora", href: "#features" },
       { name: "Moments of Calm", href: "#lifestyle" },
       { name: "Testimonials", href: "#testimonials" }
     ],
@@ -30,7 +30,7 @@ export function FooterSection() {
             }`}
           >
             <Link href="/" className="font-display text-3xl text-[#1A1A1A] block mb-6">
-              Elira
+              Elora
             </Link>
             <p className="text-[#737373] leading-relaxed mb-6 font-body">
               Clean beauty for conscious living. Natural skincare crafted with care for your skin and the planet.

@@ -9,19 +9,14 @@ export function ProductFeaturesSection() {
 
   const features = [
     {
-      title: 'Natural Ingredients',
-      description: 'Every product is crafted with carefully sourced botanical extracts and organic compounds. We believe in the power of nature to nourish and restore.',
-      image: '/images/natural-20ingredients.png'
-    },
-    {
       title: 'Sustainable Crafted',
       description: 'From recyclable packaging to carbon-neutral shipping, sustainability is woven into every decision we make. Beauty that respects our planet.',
-      image: '/images/sustainable-20crafted.png'
+      image: '/images/sus1.jpg'
     },
     {
       title: 'Dermatologist Tested',
       description: 'All formulations undergo rigorous testing to ensure they are gentle, effective, and suitable for even the most sensitive skin types.',
-      image: '/images/dermato.png'
+      image: '/images/der1.jpg'
     }
   ]
 
@@ -35,7 +30,7 @@ export function ProductFeaturesSection() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            Why Choose Elira
+            Why Choose Elora
           </h2>
           <p 
             className={`text-[#737373] text-lg max-w-2xl mx-auto transition-all duration-1000 delay-200 ${

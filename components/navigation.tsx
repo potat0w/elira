@@ -22,7 +22,7 @@ export function Navigation() {
 
   const navLinks = [
     { href: "/shop", label: "Shop" },
-    { href: "#features", label: "Why Choose Elira" },
+    { href: "#features", label: "Why Choose Elora" },
     { href: "#lifestyle", label: "Moments of Calm" },
     { href: "#testimonials", label: "Testimonials" },
   ];
@@ -46,7 +46,7 @@ export function Navigation() {
               isScrolled ? "text-[#1A1A1A]" : "text-white"
             }`}
           >
-            Elira
+            Elora
           </Link>
 
           {/* Desktop Navigation */}

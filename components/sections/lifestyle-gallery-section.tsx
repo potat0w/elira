@@ -6,10 +6,10 @@ export function LifestyleGallerySection() {
   const { ref: sectionRef, isVisible } = useScrollReveal()
 
   const images = [
-    { src: '/images/lifestyle-gallery-1.png', caption: 'Morning Rituals' },
-    { src: '/images/lifestyle-gallery-2.png', caption: 'Quiet Moments' },
-    { src: '/images/lifestyle-gallery-3.png', caption: 'Workspace Serenity' },
-    { src: '/images/lifestyle-gallery-4.png', caption: 'Living with Nature' }
+    { src: '/images/m1.jpg', caption: 'Morning Rituals' },
+    { src: '/images/m2.jpg', caption: 'Quiet Moments' },
+    { src: '/images/m3.jpg', caption: 'Workspace Serenity' },
+    { src: '/images/m4.jpg', caption: 'Living with Nature' }
   ]
 
   return (
@@ -22,7 +22,7 @@ export function LifestyleGallerySection() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            The Elira Lifestyle
+            The Elora Lifestyle
           </p>
           <h2 
             className={`font-display text-4xl md:text-5xl lg:text-6xl mb-6 transition-all duration-1000 delay-100 ${
@@ -75,14 +75,8 @@ export function LifestyleGallerySection() {
                 <img 
                   src={image.src || "/placeholder.svg"}
                   alt={image.caption}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-                <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <p className="font-display text-white text-2xl md:text-3xl transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                    {image.caption}
-                  </p>
-                </div>
               </div>
             ))}
           </div>
@@ -94,9 +88,9 @@ export function LifestyleGallerySection() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <p className="text-[#737373] mb-6">Share your Elira moments with us</p>
+          <p className="text-[#737373] mb-6">Share your Elora moments with us</p>
           <button className="border border-black px-8 py-3 rounded-full hover:bg-black hover:text-white transition-all duration-300">
-            #EliraLifestyle
+            #EloraLifestyle
           </button>
         </div>
       </div>
