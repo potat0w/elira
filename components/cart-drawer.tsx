@@ -7,13 +7,16 @@ import { useCart } from "@/contexts/cart-context";
 import { formatBDTSimple } from "@/lib/currency";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export function CartDrawer() {
   const { state, removeItem, updateQuantity, toggleCart, setCartOpen } = useCart();
+  const router = useRouter();
 
   const handleCheckout = () => {
-    // Implement checkout logic here
-    alert('Checkout functionality would be implemented here');
+    // Navigate to checkout page
+    router.push('/checkout');
+    setCartOpen(false);
   };
 
   return (

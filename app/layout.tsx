@@ -4,6 +4,7 @@ import { Playfair_Display, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CartProvider } from '@/contexts/cart-context'
 import { CartDrawer } from '@/components/cart-drawer'
+import { Toaster } from "@/components/ui/toaster";
 import './globals.css'
 
 const playfair = Playfair_Display({ 
@@ -23,21 +24,9 @@ export const metadata: Metadata = {
   title: 'Elora — Modern Living Store',
   description: 'Discover handpicked products made just for you. A curated space for calm, design, and everyday elegance.',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
 }
 
@@ -56,6 +45,7 @@ export default function RootLayout({
         <CartProvider>
           {children}
           <CartDrawer />
+          <Toaster />
           <Analytics />
         </CartProvider>
       </body>

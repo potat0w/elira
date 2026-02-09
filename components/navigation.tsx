@@ -21,10 +21,11 @@ export function Navigation() {
   }, []);
 
   const navLinks = [
+    { href: "/", label: "Home" },
     { href: "/shop", label: "Shop" },
-    { href: "#features", label: "Why Choose Elora" },
-    { href: "#lifestyle", label: "Moments of Calm" },
-    { href: "#testimonials", label: "Testimonials" },
+    { href: "/#features", label: "Why Choose Elora" },
+    { href: "/#lifestyle", label: "Moments of Calm" },
+    { href: "/#testimonials", label: "Testimonials" },
   ];
 
   return (
@@ -41,7 +42,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-14 px-2">
           {/* Logo */}
           <Link
-            href="#"
+            href="/"
             className={`font-display text-2xl tracking-tight transition-colors duration-500 ${
               isScrolled ? "text-[#1A1A1A]" : "text-white"
             }`}

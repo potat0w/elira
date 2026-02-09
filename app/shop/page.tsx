@@ -1,21 +1,24 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { useRouter } from "next/navigation";
 import { ProductCard } from "@/components/product-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { Filter, X } from "lucide-react";
+import { Filter, X, Home, ChevronRight } from "lucide-react";
 import { products, categories, brands, concerns, sortOptions } from "@/data/products";
 import { useCart } from "@/contexts/cart-context";
 import { Product, FilterState } from "@/types/product";
+import Link from "next/link";
 
 const ITEMS_PER_PAGE = 12;
 
 export default function ShopPage() {
   const { addItem, toggleCart } = useCart();
+  const router = useRouter();
   
   const [filters, setFilters] = useState<FilterState>({
     category: 'All',
@@ -71,9 +74,8 @@ export default function ShopPage() {
   };
 
   const handleQuickView = (product: Product) => {
-    // For now, just navigate to product page
-    // In a real implementation, this would open a modal
-    window.location.href = `/product/${product.slug}`;
+    // Navigate to product page using Next.js router
+    router.push(`/product/${product.slug}`);
   };
 
   const updateFilter = (key: keyof FilterState, value: any) => {
@@ -101,6 +103,16 @@ export default function ShopPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 py-8">
+        {/* Breadcrumb Navigation */}
+        <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
+          <Link href="/" className="flex items-center hover:text-gray-900 transition-colors">
+            <Home className="w-4 h-4 mr-1" />
+            Home
+          </Link>
+          <ChevronRight className="w-4 h-4" />
+          <span className="text-gray-900 font-medium">Shop</span>
+        </nav>
+
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Shop</h1>
