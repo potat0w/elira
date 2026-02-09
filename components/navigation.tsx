@@ -10,7 +10,7 @@ import { useCart } from "@/contexts/cart-context";
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { toggleCart, getItemCount } = useCart();
+  const { toggleCart, getItemCount, state: cartState } = useCart();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +29,9 @@ export function Navigation() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-[100] pointer-events-none">
+    <header className={`fixed top-0 left-0 right-0 z-[100] pointer-events-none transition-opacity duration-300 ${
+      cartState.isOpen ? 'opacity-0' : 'opacity-100'
+    }`}>
       <nav 
         className={`max-w-5xl mx-auto mt-6 px-4 pointer-events-auto transition-all duration-500 ${
           mobileMenuOpen ? "" : "rounded-full"
